@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 커뮤니티 관리 </title>
+
+    <style>
+        .contents {
+            clear:both;
+            min-height:100vh;
+        }
+        .contents::after {
+            content:"";
+            clear:both;
+            display:block;
+            width:100%;
+        }
+
+        .page {
+            clear:both;
+            width: 100%;
+            min-height: 90vh;
+            position:relative;
+            top: 50px;
+            margin: 0px auto;
+        }
+        .page::after {
+            content:"";
+            display:block;
+            width: 100%;
+            clear:both;
+        }
+
+        .page_wrap {
+            clear:both;
+            width: 1000px;
+            height: auto;
+            margin:0 auto;
+        }
+
+        .content_tit {
+            font-weight: bold;
+            font-size: 25px;
+            margin: 50px 30px 30px 10px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="wrap">
+    <div class="contents" id="contents">
+        <div class="content_header">
+            <div class="breadcrumb">
+                <p><a href="">Home</a> &gt; <a href="">관리자 페이지</a> &gt; <span> 회원 관리 </span> </p>
+                <h2 class="page_tit"> 관리자 페이지 </h2>
+            </div>
+        </div>
+        <section class="page" id="page1">
+            <div class="page_wrap">
+                <p class="content_tit"> 회원 관리 </p>
+                <hr>
+                <div class="board_list_wrap">
+                    <div class="board_list">
+                        <div class="top">
+                            <div class="id"> 회원 아이디 </div>
+                            <div class="name"> 이름 </div>
+                            <div class="date"> 가입일 </div>
+                            <div class="kick"> 강퇴 </div>
+                        </div>
+                     
+                        <div>
+                            <div class="id">asd</div>
+                            <div class="name"> asdf</div>
+                            <div class="date"> asdf </div>
+                            <div class="kick">강퇴</button></div>
+                        </div>
+                    
+                    </div>
+                    <div class="board_page">
+                        <a href="/" class="bt first"> &lt;&lt; </a>
+                        <a href="#" class="bt prev"> &lt; </a>
+                        <a href="#" class="num on"> 1 </a>
+                        <a href="#" class="num"> 2 </a>
+                        <a href="#" class="num"> 3 </a>
+                        <a href="#" class="num"> 4 </a>
+                        <a href="#" class="num"> 5 </a>
+                        <a href="#" class="bt next"> &gt; </a>
+                        <a href="#" class="bt last"> &gt;&gt; </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
