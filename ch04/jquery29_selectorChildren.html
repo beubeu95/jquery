@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery 29 : 선택자의 자식 요소</title>
-    <script src="../ch02/jquery-1.12.4.js"></script> 
+    <script src="./jquery-1.12.4.js"></script> 
     <style>
     .container { clear:both; width:1000px; margin:20px auto; } 
     .container:after { content:""; display:block; clear:both; }
@@ -20,9 +20,9 @@
         //div 요소에 아래 테두리선 3px solid red를 적용하고, 그 자식요소 중에서 span 요소의 글자크기를 3배 크게 적용
         //div 요소에 배경색 핑크로 하고, 그 자식요소 중에서 .sel 인 요소의 글자색을 빨강색으로 설정
         //아이디가 btn2인 버튼을 누르면 div의 내용 중에서 span 요소를 제거
-        $("#btn1").on("click", function(){
+        $("#btn1").on("clic",function(){
             $("div").css("border-bottom","3px solid red").children("span").css("font-size","3em");
-            $("div").css("background","pink").find(".sel").css("color","red");
+            $("div").css("background-colr","pink").find(".sel").css("color","red");
         });
         $("#btn2").click(function(){
             $("div").contents().remove("span");

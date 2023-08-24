@@ -16,8 +16,8 @@
     <section class="container">
         <h1>기본 메소드 - val()</h1>
         <article class="data">
-            <button type="button" id="submit">값 전송</button>
-            <button type="button" id="reset">초기화</button>
+            <button id="submit">값 전송</button>
+            <button id="reset">초기화</button>
             <input type="text" size="30" title="id입력" placeholder="id" id="m_id">
             <div id="console"></div>
         </article>
@@ -32,23 +32,14 @@
         $("#submit").click(function(){
             var data = $("#m_id").val();
             if(data==""){
-                alert("값을 입력해주삼~!");
+                alert("값을 입력해주세요");
                 return false;
-            } else {
+            }else{
                 $("#console").text(data);
             }
         });
-    });
-    //attr("태그속성","값")         attr("태그속성")
-    //removeAttr("태그속성")
-    //css("style속성","값")         css("style속성")
-    //addClass("클래스명")
-    //removeClass("클래스명")
-    //toggleClass("클래스명")
-    //hasClass("클래스명")
-    //val("값")                     val()
-    //text("문자열로된값")           text()
-    //html("태그를포함한값")          html()
+    });    
+
     </script>
 </body>
 </html>

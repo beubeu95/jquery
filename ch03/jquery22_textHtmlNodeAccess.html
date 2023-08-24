@@ -25,12 +25,10 @@
         </article>
     </section><br><hr><br>
     <script>
-    //$("선택자").메소드()    -> getter
-    //$("선택자").메소드("값") -> setter
     $(document).ready(function(){
         //p 요소를 클릭하면, 클릭된 요소의 태그를 포함하여 아이디가 console인 곳에 텍스트 형태로 출력
         $("p").click(function(){
-            $("#console").text($(this).html());
+            $("#console").text($(this).text());
         });
     });    
     </script>

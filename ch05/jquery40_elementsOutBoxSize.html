@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery 40 : 엘리먼트 마진을 포함한 크기</title>
-    <script src="../ch02/jquery-1.12.4.js"></script> 
+    <script src="./jquery-1.12.4.js"></script> 
     <style>
     .container { clear:both; width:1000px; margin:20px auto; } 
     .container:after { content:""; display:block; clear:both; }
@@ -18,8 +18,9 @@
     $(document).ready(function(){
         //문서가 로딩되면, 첫 p요소의 너비와 마진을 포함한 너비를 구하여 아이디가 res1인 곳에 출력하고, 높이와 마진을 포함한 높이를 구하여 아이디가 res2인 곳에 출력
         var p = $("p:first");
-        $("#res1").text("마진을 포함한 너비 : "+p.outerWidth(true));
-        $("#res2").text("마진을 포함한 높이 : "+p.outerHeight(true));
+        $("#res1").text("마진 포함한 너비"+p.outerWidth(true));
+        $("#res2").text("마진 포함한 높이"+p.outerHeight(true));
+
     });    
     </script>
 </head>

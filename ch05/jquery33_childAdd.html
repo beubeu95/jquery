@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery 33 : 자식 엘리먼트 추가하기</title>
-    <script src="../ch02/jquery-1.12.4.js"></script> 
+    <script src="./jquery-1.12.4.js"></script> 
     <style>
     .container { clear:both; width:1000px; margin:20px auto; } 
     .container:after { content:""; display:block; clear:both; }
@@ -16,19 +16,14 @@
     <script>
     $(document).ready(function(){
         //추가할 도시명
-        var cities = ["인천","김포","부천","제주","부산","강릉","세종"];
+        var cities = [ "인천","김포","부천","제주","부산","강릉","세종"  ];
         //추가할 카드명
-        var cards = ["리자몽","레쿠쟈","아르세우스","뮤츠","펄기아","디아루가"];
-        //문서가 로딩되면, 내가 살고 싶은 도시를 아이디가 cities_list에 추가 될 수 있도록 함
-        $(cities).each(function(index, value){
-            //$("#cities_list").append("<li>"+value+"</li>");
-            $("<li>"+value+"</li>").appendTo($("#cities_list"));
-        });
+        var cards = ["사과","오렌지","배","키위","멜론","블루베리","망고"];
         //문서가 로딩되면, 내가 갖고 싶은 카드를 아이디가 card_list에 추가 될 수 있도록 함
-        $.each(cards, function(index, value){
-            //$("#card_list").prepend("<li>"+value+"</li>");
-            $("<li>"+value+"</li>").prependTo($("#card_list"));
+        $(cities).each(function(index, value){
+            $("<li>"+value+"</li>").appendTo("#cities_list");
         });
+        $.each(card)
     });    
     </script>
 </head>

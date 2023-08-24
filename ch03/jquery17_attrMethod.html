@@ -24,11 +24,9 @@
     <script>
     $(document).ready(function(){
         //img 첫 요소에 src 속성을 임의 이미지로 연결하고, title 속성을 "아름다운 사람들"로 지정
-        $("img:first").attr("src","../dy1.jpg").attr("title","아름다운 사람들");
-
+        $("img:first").attr("src","/img/ani1.png").attr("title","아름다운 사람들");
         //img 첫 요소에 지정된 title 값을 클래스가 comment인 곳에 요소로 추가
         $(".comment").append($("img:first").attr("title"));
-
         //img 첫 요소에 지정된 data-value 값을 클래스가 res인 곳에 텍스트로 추가
         $(".res").text($("img:first").attr("data-value"));
     });    

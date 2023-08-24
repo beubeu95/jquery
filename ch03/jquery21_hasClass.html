@@ -19,9 +19,9 @@
         <h1>기본 메소드 - hasClass()</h1>
         <article class="data">
             <button> 선색 변경 </button>
-            <img src="../jinkyoung1.jpg" title="당신의 애인사진1" alt="Lover picture" class="img1 gbor">
-            <img src="../jinkyoung2.jpg" title="당신의 애인사진2" alt="Lover picture" class="img1 bbor">
-            <img src="../blackpink.jpg" title="당신의 애인사진2" alt="Lover picture" class="img1 rbor">
+            <img src="jinkyoung1.jpg" title="당신의 애인사진1" alt="Lover picture" class="img1 gbor">
+            <img src="jinkyoung2.jpg" title="당신의 애인사진2" alt="Lover picture" class="img1 bbor">
+            <img src="blackpink.jpg" title="당신의 애인사진2" alt="Lover picture" class="img1 rbor">
         </article>
     </section><br><hr><br>
     <script>
@@ -30,11 +30,11 @@
         $("button").click(function(){
             $(".img1").each(function(){
                 if($(this).hasClass("gbor")){
-                    $(this).removeClass("gbor").addClass("bbor");
-                } else if($(this).hasClass("bbor")){
-                    $(this).removeClass("bbor").addClass("rbor");
-                } else {
-                    $(this).removeClass("rbor").addClass("gbor");
+                    $(".img1").remove("gbor").addClass("bbor");
+                }else if($(this).hasClass("bbor")){
+                    $(".img1").remove("bbor").addClass("rbor");
+                }else if($(this).hasClass("rbor")){
+                    $("img1").remove("rbor").addClass("gbor");
                 }
             });
         });

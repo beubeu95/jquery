@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery 28 : 선택자의 다음/이전 요소</title>
-    <script src="../ch02/jquery-1.12.4.js"></script> 
+    <script src="./jquery-1.12.4.js"></script> 
     <style>
     .container { clear:both; width:1000px; margin:20px auto; } 
     .container:after { content:""; display:block; clear:both; }
@@ -28,9 +28,9 @@
             $(this).next("div").css("background-color","yellow");
             $(this).prev("div").css("background-color","red");
             $("div").next().addClass("after");
-            $("div").nextAll(".middle").addClass("sel");
+            $("div").nextAll().hasClass("middle").addClass("sel");
             $("div").prev("span").css("color","orange");
-            $("div").prevAll().css("padding", "25px");
+            $("div").prevAll().css("padding","25px");
         });
     });    
     </script>

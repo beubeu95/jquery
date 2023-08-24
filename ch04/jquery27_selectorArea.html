@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery 27 : 선택자의 범위</title>
-    <script src="../ch02/jquery-1.12.4.js"></script> 
+    <script src="./jquery-1.12.4.js"></script> 
     <style>
     .container { clear:both; width:1000px; margin:20px auto; } 
     .container:after { content:""; display:block; clear:both; }
@@ -19,8 +19,8 @@
         //div 엘리먼트 중에서 2 이상 4미만, 인덱스가 0부터 시작하기에 세번째, 네번째 엘리먼트만 배경색 빨강
         //인덱스가 5이후인 요소는 배경색 초록으로 적용 - slice(begin, end) : begin포함, end미포함 - end 값은 생략가능
         $("button").click(function(){
-            $("div").slice(2, 4).css("background-color", "#f00");
-            $("div").slice(5).css("background-color","#0f0");
+            $("div").slice(2,4).css("background-color","red");
+            $("div").slice(5).css("background-color","green");
         });
     });    
     </script>

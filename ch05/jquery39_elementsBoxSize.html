@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery 39 : 엘리먼트 크기 구하기 및 설정과 위치</title>
-    <script src="../ch02/jquery-1.12.4.js"></script> 
+    <script src="./jquery-1.12.4.js"></script> 
     <style>
     .container { clear:both; width:1000px; margin:20px auto; } 
     .container:after { content:""; display:block; clear:both; }
@@ -20,10 +20,10 @@
         //.abs 요소를 클릭하면, 클릭된 요소의 가로 위치, 세로 위치, 폭, 높이를 
         //아이디가 result인 곳에 출력
         $(".abs").click(function(){
-            var loc = $(this).offset(); //left, top
+            var loc = $(this).offset();
             $("#result").text(this.tagName+"  coords("+loc.left+", "+loc.top+", width:"+$(this).width()+", height:"+$(this).height()+")");
         });
-    });    
+    });
     </script>
 </head>
 <body>

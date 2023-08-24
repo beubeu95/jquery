@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery 37 : 엘리먼트 비우기 및 제거하기</title>
-    <script src="../ch02/jquery-1.12.4.js"></script> 
+    <script src="./jquery-1.12.4.js"></script> 
     <style>
     .container { clear:both; width:1000px; margin:20px auto; } 
     .container:after { content:""; display:block; clear:both; }
@@ -20,7 +20,6 @@
         $("#btn1").click(function(){
             $("p").empty();
         });
-
         //아이디가 btn2인 요소를 클릭하면, li요소 중에서 비어 있는 요소를 제거한다.
         $("#btn2").click(function(){
             $("li:empty").remove();
